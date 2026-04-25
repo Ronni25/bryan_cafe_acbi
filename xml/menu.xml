@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE menu [
+<!ELEMENT menu (meals,beverages)>
+<!ELEMENT meals (menuItem*)>
+<!ELEMENT beverages (hotBeverages, otherBeverages)>
+<!ELEMENT hotBeverages (menuItem*)>
+<!ELEMENT otherBeverages (menuItem*)>
+<!ELEMENT menuItem (name?, size?, price, description?, imageURL?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT imageURL (#PCDATA)>
+]>
+
+<menu>
+    <meals>
+        <menuItem>
+            <name>
+                Beetroot and feta salad
+            </name>

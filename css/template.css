@@ -1,0 +1,625 @@
+/***********************************************************
+
+* Comment:    *
+
+* Author:                                *
+
+* Date created:                             *
+
+ ***********************************************************/
+
+ 
+
+ :root {
+
+    /*For copyright text*/
+
+    --cfWhite: #e9e9e9;
+
+    --cfLightPink: #f8dce4;
+
+    --cfDarkPink: #835361;
+
+}
+
+ 
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+ 
+
+ 
+
+/* aside {
+
+    display: none;
+
+} */
+
+ 
+
+body {
+
+    font-family: arial;
+
+    background-color: var(--cfLightPink) !important;
+
+    ;
+
+}
+
+ 
+
+footer {
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+ 
+
+footer {
+
+    background-color: var(--cfDarkPink);
+
+    opacity: 0.95;
+
+    display: flex;
+
+    height: 10vh;
+
+    width: 100%;
+
+}
+
+ 
+
+/* input[value="Go to Checkout"] {
+
+    background-color: var(--cfDarkBlue);
+
+    border: 0;
+
+    border-radius: 5px;
+
+    color: var(--cfLightGrey);
+
+    font-size: 1rem;
+
+    width: 100%;
+
+} */
+
+ 
+
+main {
+
+    display: flex;
+
+    margin: auto;
+
+    min-height: 90vh;
+
+    position: relative;
+
+    top: 5vh;
+
+    width: 100%;
+
+}
+
+ 
+
+nav {
+
+    background-color: var(--cfDarkPink);
+
+    height: 20vh;
+
+    width: 100vw;
+
+    padding: 1vh 1vw;
+
+    display: none;
+
+    position: fixed;
+
+    /* top: 10vh; */
+
+    z-index: 1;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+
+}
+
+ 
+
+nav>ul>li {
+
+    display: inline;
+
+    margin-right: 5vw;
+
+}
+
+ 
+
+nav>ul>li>a {
+
+    color: var(--cfWhite);
+
+    text-decoration: none;
+
+}
+
+ 
+
+section {
+
+    background-color: var(--cfWhite);
+
+    width: 100%;
+
+    padding: 1vh 1vw 3vh;
+
+}
+
+ 
+
+table,
+
+th,
+
+td {
+
+    border-collapse: collapse;
+
+}
+
+ 
+
+th,
+
+td {
+
+    padding: 1vh;
+
+}
+
+ 
+
+#logo {
+
+    height: 15vh;
+
+    width: auto;
+
+}
+
+ 
+
+.banner {
+
+    width: 100%;
+
+}
+
+ 
+
+.container,
+
+.container-fluid {
+
+    min-height: 100vh;
+
+    background-color: var(--cfLightPink);
+
+}
+
+ 
+
+.card-img-top {
+
+    max-width: 300px;
+
+    max-height: 250px;
+
+}
+
+ 
+
+.mobileButtonStyle {
+
+    background-color: var(--cfDarkPink);
+
+    width: 40px;
+
+    height: 40px;
+
+    padding: 5px;
+
+    z-index: 1;
+
+    border-radius: 5px;
+
+}
+
+ 
+
+.mobileMenuModal {
+
+    position: fixed;
+
+    padding-top: 10vh;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    visibility: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    opacity: 0;
+
+    /*Start at 0, then transition to 0.9 opacity*/
+
+    transition: 0.5s;
+
+    z-index: 3;
+
+}
+
+ 
+
+.perfectCenter {
+
+    /*container must be displayed as flex*/
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+ 
+
+ 
+
+/* .purchasesContainer {
+
+    width: 100%;
+
+    height: 100%;
+
+} */
+
+ 
+
+ 
+
+/* .purchasesContainer>h2 {
+
+    text-align: center;
+
+    margin-top: 2vh;
+
+    margin-bottom: 8vh;
+
+}
+
+ 
+
+.purchasesContainer>table {
+
+    margin: auto;
+
+} */
+
+ 
+
+.toggler {
+
+    position: absolute;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+    width: 40px;
+
+    height: 40px;
+
+    opacity: 0;
+
+}
+
+ 
+
+.total {
+
+    font-weight: bold;
+
+}
+
+ 
+
+ 
+
+/*For landscape phones where the header height is to small
+
+for the logo to fit.*/
+
+ 
+
+@media (max-width: 850px) and (max-height: 440px) {
+
+    footer {
+
+        background-color: var(--cfDarkPink);
+
+        opacity: 0.95;
+
+        height: 15vh;
+
+    }
+
+    footer {
+
+        position: relative;
+
+    }
+
+    header {
+
+        justify-content: center;
+
+    }
+
+    /* input[value="Go to Checkout"] {
+
+        border: 0;
+
+        width: 100%;
+
+        font-size: 0.75rem;
+
+        background-color: var(--cfDarkBlue);
+
+        color: var(--cfLightGrey);
+
+        border-radius: 5px;
+
+    } */
+
+    #logo {
+
+        height: 13vh;
+
+    }
+
+    main {
+
+        position: relative;
+
+        top: 25vh;
+
+        min-height: 55vh;
+
+        width: 100%;
+
+        margin: auto;
+
+    }
+
+    nav {
+
+        display: flex;
+
+        font-size: 0.75rem;
+
+        justify-content: space-between;
+
+        height: 20vh;
+
+    }
+
+    footer {
+
+        top: 25vh;
+
+    }
+
+    .mobileMenuContainer {
+
+        display: none;
+
+    }
+
+}
+
+ 
+
+ 
+
+/* @media (max-width: 850px) and (max-height: 440px) */
+
+ 
+
+ 
+
+/*For tablet portrait*/
+
+ 
+
+@media(min-width: 500px) and (min-height: 710px) {
+
+    main {
+
+        margin: auto;
+
+        width: 100%;
+
+    }
+
+    footer {
+
+        position: relative;
+
+        top: 15vh;
+
+    }
+
+    /* input[value="Go to Checkout"] {
+
+        border: 0;
+
+        width: 100%;
+
+        font-size: 1rem;
+
+        background-color: var(--cfDarkBlue);
+
+        color: var(--cfLightGrey);
+
+        border-radius: 5px;
+
+    } */
+
+}
+
+ 
+
+ 
+
+/* @media(min-width: 500px) and (min-height: 710px) */
+
+ 
+
+ 
+
+/*For portraits of Surface Duo and Galaxy Fold unfolded*/
+
+ 
+
+@media(min-width: 500px) and (max-height: 720px) {
+
+    main {
+
+        margin: auto;
+
+        width: 100%;
+
+    }
+
+    /* input[value="Go to Checkout"] {
+
+        border: 0;
+
+        width: 100%;
+
+        font-size: 0.75rem;
+
+        background-color: var(--cfDarkBlue);
+
+        color: var(--cfLightGrey);
+
+        border-radius: 5px;
+
+    } */
+
+}
+
+ 
+
+ 
+
+/* @media(min-width: 500px) and (max-height: 720px) */
+
+ 
+
+ 
+
+/*For other screen such as desktop monitors*/
+
+ 
+
+@media(min-width: 500px) and (min-height: 441px) {
+
+    footer {
+
+        opacity: 1;
+
+    }
+
+    footer {
+
+        background-color: var(--cfDarkPink);
+
+        position: relative;
+
+        top: 15vh;
+
+    }
+
+    main {
+
+        top: 20vh;
+
+        width: 100%;
+
+        margin: auto;
+
+    }
+
+    nav {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        /* top: 10vh; */
+
+    }
+
+    section {
+
+        width: 100vw;
+
+        display: block;
+
+    }
+
+    .mobileMenuContainer {
+
+        display: none;
+
+    }
+
+}
+
+ 
+
+ 
+
+/* @media(min-width: 600px) */
