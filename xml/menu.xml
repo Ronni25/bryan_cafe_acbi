@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE menu [
-<!ELEMENT menu (meals,beverages)>
-<!ELEMENT meals (menuItem*)>
-<!ELEMENT beverages (hotBeverages, otherBeverages)>
-<!ELEMENT hotBeverages (menuItem*)>
-<!ELEMENT otherBeverages (menuItem*)>
-<!ELEMENT menuItem (name?, size?, price, description?, imageURL?)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT size (#PCDATA)>
-<!ELEMENT price (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-<!ELEMENT imageURL (#PCDATA)>
-]>
-
+<!DOCTYPE menu SYSTEM "menu.dtd">
 <menu>
     <meals>
         <menuItem>
-            <name>
-                Beetroot and feta salad
-            </name>
+            <name>Beetroot and feta salad</name>
+            <price>$15.00</price>
+            <description>Fresh salad.</description>
+            <imageURL>images/salad.jpg</imageURL>
+        </menuItem>
+    </meals>
+
+    <beverages>
+        <hotBeverages>
+            <menuItem>
+                <name>Espresso</name>
+                <size>Small</size>
+                <price>$3.50</price>
+                <description>Strong coffee.</description>
+                <imageURL>images/coffee.jpg</imageURL>
+            </menuItem>
+        </hotBeverages>
+        
+        <otherBeverages>
+            <menuItem>
+                <name>Orange Juice</name>
+                <price>$5.00</price>
+                <description>Freshly squeezed.</description>
+                <imageURL>images/juice.jpg</imageURL>
+            </menuItem>
+        </otherBeverages>
+    </beverages>
+</menu>

@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE branches
-[
-<!ELEMENT branches (branch*)>
-<!ELEMENT branch (address, contact, hours, mapsLink)>
-<!ELEMENT address (#PCDATA)>
-<!ELEMENT contact (#PCDATA)>
-<!ELEMENT hours (#PCDATA)>
-<!ELEMENT mapsLink (#PCDATA)>
-]>
+<!DOCTYPE branches SYSTEM "branch.dtd">
 
 <branches>
     <branch>

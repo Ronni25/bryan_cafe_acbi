@@ -1,7 +1,6 @@
-<!ELEMENT branch (item+)>
-<!ELEMENT item (address, contact, openingHours)>
-<!ELEMENT openingHours (weekday, weekend)>
+<!ELEMENT branches (branch*)>
+<!ELEMENT branch (address, contact, hours, mapsLink)>
 <!ELEMENT address (#PCDATA)>
 <!ELEMENT contact (#PCDATA)>
-<!ELEMENT weekday (#PCDATA)>
-<!ELEMENT weekend (#PCDATA)>
+<!ELEMENT hours (#PCDATA)>
+<!ELEMENT mapsLink (#PCDATA)>

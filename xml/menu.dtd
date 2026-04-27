@@ -1,11 +1,11 @@
-<!ELEMENT menu (meal, beverage)>
-<!ELEMENT meal (item+)>
-<!ELEMENT beverage (coffeeAndHotChocolate, other)>
-<!ELEMENT coffeeAndHotChocolate (item+)>
-<!ELEMENT other (item+)>
-<!ELEMENT item ((name|size)?, price, description?, image?)>
+<!ELEMENT menu (meals, beverages)>
+<!ELEMENT meals (menuItem*)>
+<!ELEMENT beverages (hotBeverages, otherBeverages)>
+<!ELEMENT hotBeverages (menuItem*)>
+<!ELEMENT otherBeverages (menuItem*)>
+<!ELEMENT menuItem (name?, size?, price, description?, imageURL?)>
 <!ELEMENT name (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
-<!ELEMENT image (#PCDATA)>
-<!ELEMENT size (#PCDATA)>
+<!ELEMENT imageURL (#PCDATA)>
