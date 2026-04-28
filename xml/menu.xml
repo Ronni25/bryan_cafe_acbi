@@ -5,9 +5,31 @@
         <menuItem>
             <name>Beetroot and feta salad</name>
             <price>$15.00</price>
-            <description>Fresh salad.</description>
+            <description>Suitable for vegetarians, made with fresh beetroot</description>
             <imageURL>images/salad.jpg</imageURL>
         </menuItem>
+        
+        <menuItem>
+            <name>Sourdough Rye Sandwich</name>
+            <price>$18.00</price>
+            <description>Cheese and salad sandwich made with organic, sourdough rye bread</description>
+            <imageURL>images/sandwich.jpg</imageURL>
+        </menuItem>
+        
+        <menuItem>
+            <name>Spinach Pie and Salad</name>
+            <price>$15.00</price>
+            <description>Tasty pie with salad.</description>
+            <imageURL>images/pie.jpg</imageURL>
+        </menuItem>
+
+        <menuItem>
+            <name>Feta pancakes with salad</name>
+            <price>$19.50</price>
+            <description>Tasty pancake filled with feta and salad.</description>
+            <imageURL>images/pancake.jpg</imageURL>
+        </menuItem>
+
     </meals>
 
     <beverages>
@@ -19,15 +41,46 @@
                 <description>Strong coffee.</description>
                 <imageURL>images/coffee.jpg</imageURL>
             </menuItem>
+
+            <menuItem>
+                <name>Espresso</name>
+                <size>Regular</size>
+                <price>$4.00</price>
+                <description>Strong coffee.</description>
+                <imageURL>images/coffee.jpg</imageURL>
+            </menuItem>
+
+            <menuItem>
+                <name>Espresso</name>
+                <size>Large</size>
+                <price>$4.50</price>
+                <description>Strong coffee.</description>
+                <imageURL>images/coffee.jpg</imageURL>
+            </menuItem>
         </hotBeverages>
         
         <otherBeverages>
             <menuItem>
-                <name>Orange Juice</name>
-                <price>$5.00</price>
+                <name>Soda</name>
+                <price>$3.00</price>
+                <description>Freshly squeezed.</description>
+                <imageURL>images/soda.jpg</imageURL>
+            </menuItem>
+
+            <menuItem>
+                <name>Fresh Juice</name>
+                <price>$6.00</price>
                 <description>Freshly squeezed.</description>
                 <imageURL>images/juice.jpg</imageURL>
             </menuItem>
+
+            <menuItem>
+                <name>Bottle water</name>
+                <price>$2.00</price>
+                <description>Freshly squeezed.</description>
+                <imageURL>images/water.jpg</imageURL>
+            </menuItem>
+
         </otherBeverages>
     </beverages>
 </menu>
